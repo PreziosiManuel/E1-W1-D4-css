@@ -1,4 +1,7 @@
 /* IMPOSTAZIONI GENERALI */
+html {
+  font-size: 62.5%;
+}
 *,
 *::before,
 *::after {
@@ -7,11 +10,13 @@ body {
   font-family: Poppins, "Helvetica Neue", sans-serif;
   font-size: 1.3rem;
   background-image: url(/assets/img/sfondo.png);
+  /* background-color: black; */
   padding: 15px;
+  line-height: 1.5;
 }
 /* HEADER */
 header {
-  background-color: aqua;
+  background-color: rgb(50 108 121);
   margin-inline: auto;
   padding: 20px;
   text-align: center;
@@ -19,6 +24,7 @@ header {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
+  box-shadow: 1px 2px 3px 0;
 }
 header ul a {
   text-decoration: none;
@@ -32,29 +38,105 @@ header img {
 }
 header h1 {
   color: white;
-  margin-top: 20px;
-  margin-bottom: 25px;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 /* MAIN */
 main {
   background-color: white;
   padding: 2rem 1.5rem;
+  box-shadow: 1px 2px 3px 1px;
 }
 main h3 {
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   font-size: 2rem;
   letter-spacing: -0.5px;
 }
 .h3-p {
-  color: whitesmoke;
+  color: rgba(158, 155, 155, 0.732);
+  content: "\f14b";
+  margin-bottom: 2rem;
+  font-family: initial;
+}
+.h4 {
+  margin-top: 2rem;
 }
 /* ELEMENTI NEL MAIN - ARTICLE */
+.span-1 {
+  color: rgb(187, 16, 147);
+}
+p {
+  margin-bottom: 2rem;
+}
+.ul {
+  list-style: disc;
+}
+.ol {
+  list-style: decimal;
+}
+.span-box {
+  background-color: #e3e3e3;
+  border-radius: 5px;
+  border: solid 0.1px black;
+}
 
 /* TABELLE */
+table caption {
+  font-weight: bold;
+  font-family: initial;
+}
+
+.blue {
+  background-color: rgb(105, 105, 222);
+  color: white;
+  padding: 5px 5px;
+  vertical-align: bottom;
+}
+
+.ciaociao {
+  width: 100%;
+}
+
+table td {
+  padding: 2rem 1rem;
+}
+.tr-g {
+  background-color: rgb(235, 235, 235);
+  border: solid 0.5px hwb(0 80% 20% / 0.98);
+}
+.tr-end {
+  border-bottom: solid 2px blue;
+}
+.video {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
 
 /* FORM */
+
+.section {
+  background-color: hwb(0 80% 20% / 0.98);
+  padding: 12px 5px;
+  text-align: center;
+}
+
+.section h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 20px;
+}
+
+.botton {
+  background-color: blue;
+  color: white;
+  border: none;
+}
 
 /* ELEMENTI NELL' ASIDE */
 

@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap" rel="stylesheet" />
+
     <link rel="stylesheet" href="assets/css/reset.css" />
 
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <header>
-      <div>
+      <div class="ciaociao">
         <img src="./assets/img/logo.svg" alt="logo.epicode.school" class="img" />
         <h1 class="epicode">EPICODE - IL BLOG DEI DEVELOPERS</h1>
         <ul>
@@ -25,42 +27,44 @@
       <h3>Come creare un template per i post</h3>
       <p class="h3-p">di Mario Rossi - pubblicato il 25-10-2020</p>
       <p>
-        La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le parti comumi da applicare a
-        tutte le pagine
+        La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le
+        <span class="span-1">parti comumi</span> da applicare a tutte le pagine
       </p>
       <p>Le varie aree saranno quindi suddivise in:</p>
-      <ul>
-        <li>Contenuti di intestazione del tag &lt;header&gt;</li>
-        <li>Contenuti centrali variabili del tag &lt;main&gt; (corpo centrale)</li>
-        <li>Contenuti di fine pagina comuni, da inserire nel tag &lt;footer&gt;</li>
+      <ul class="ul">
+        <li>Contenuti di intestazione del tag <span class="span-box">&lt;header&gt;</span></li>
+        <li>Contenuti centrali variabili del tag <span class="span-box">&lt;main&gt;</span> (corpo centrale)</li>
+        <li>Contenuti di fine pagina comuni, da inserire nel tag <span class="span-box">&lt;footer&gt;</span></li>
       </ul>
-      <h4>Formattazione del codice</h4>
+      <h4 class="h4">Formattazione del codice</h4>
       <p>
-        Il testo del codice dovrà essere formattato per identificare tutte le parti da selezionare con i CSS. Perciò i
-        passi saranno:
+        Il testo del codice dovrà essere formattato per identificare tutte le parti da
+        <span class="span-1">selezionare con i CSS.</span> Perciò i passi saranno:
       </p>
-      <ol>
+      <ol class="ol">
         <li>Progettare il markup assegnando ad ogni specifico testo il tag appropriato</li>
         <li>Scrivere l'HTML dei tag esterni a quelli interni e dall'alto verso il basso</li>
         <li>Applicare gli stili CSS</li>
       </ol>
-      <p>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffuzione pressochè totale.</p>
+      <p class="h4">
+        L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffuzione pressochè totale.
+      </p>
 
       <table>
         <caption>
           Diffusione dei CSS
         </caption>
         <tr>
-          <th>Anno</th>
-          <th>% di utilizzo</th>
-          <th>Browser</th>
+          <th class="blue">Anno</th>
+          <th class="blue">% di utilizzo</th>
+          <th class="blue">Supporto browsers</th>
         </tr>
         <tr>
           <td>2000</td>
           <td>20%</td>
           <td>17%</td>
         </tr>
-        <tr>
+        <tr class="tr-g">
           <td>2002</td>
           <td>35%</td>
           <td>22%</td>
@@ -70,18 +74,18 @@
           <td>45%</td>
           <td>42%</td>
         </tr>
-        <tr>
+        <tr class="tr-g">
           <td>2008</td>
           <td>80%</td>
           <td>51%</td>
         </tr>
-        <tr>
+        <tr class="tr-end">
           <td>2012</td>
           <td>100%</td>
           <td>76%</td>
         </tr>
       </table>
-      <p>
+      <p class="h4">
         Un test di validazione potrà essere fatto tramite il tool online
         <a
           target="_blank"
@@ -90,15 +94,30 @@
         >dedicato allo scopo. Una volta otimizzato il tutto, avremo raggiunto il nostro obbiettivo ed essere stati dei
         veri developers come loro:
       </p>
-      <iframe src="https://www.youtube.com/embed/aBSZVeBRvDY?si=HLKnAW2GuORuCul1"></iframe>
+      <div>
+        <iframe
+          class="video"
+          src="https://www.youtube.com/embed/dvOvHXruEDM?si=vEP41KnFWSJZjiwl"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
 
-      <form>
-        <label for="email">Email</label>
-        <input type="text" id="email" placeholder="Inserisci la tua Email" />
-        <br />
-        <label for="iscriviti">Iscriviti!</label>
-        <input type="button" value="Invio" />
-      </form>
+      <section class="section">
+        <h2>Novità</h2>
+        <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
+        <form method="post" action="elabora_form.php">
+          <fieldset>
+            <!-- <label for="email">Email</label> -->
+            <input type="email" name="user_email" id="user_email" placeholder="Inserisci la tua Email" required />
+            <button type="submit">Iscriviti!</button>
+            <!-- <label for="iscriviti">Iscriviti!</label> -->
+            <!-- <input class="botton" type="button" value="Iscriviti!" /> -->
+          </fieldset>
+        </form>
+      </section>
     </main>
     <aside>
       <p>
