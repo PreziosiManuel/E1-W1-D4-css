@@ -83,6 +83,10 @@ p {
 }
 
 /* TABELLE */
+table {
+  text-align: center;
+}
+
 table caption {
   font-weight: bold;
   font-family: initial;
@@ -124,7 +128,8 @@ table td {
   text-align: center;
 }
 
-.section h2 {
+.section h2,
+h2 {
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
@@ -140,4 +145,26 @@ table td {
 
 /* ELEMENTI NELL' ASIDE */
 
+aside {
+  font-size: 1.2rem;
+}
+
+aside div a {
+  font-weight: bold;
+  color: hsl(192, 100%, 39%);
+  font-size: 1.3rem;
+}
+
+.tabgray {
+  background-color: hwb(0 80% 20% / 0.98);
+  padding: 10px;
+  margin: 15px;
+  border: solid 0.5px black;
+}
+
+.span {
+  font-size: 1.1rem;
+  text-align: right;
+  margin-bottom: 0;
+}
 /* FOOTER */
